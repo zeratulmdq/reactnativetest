@@ -21,5 +21,5 @@ install:
 
 script:
 - npm install
-- /Users/travis/.nvm/versions/node/v10.6.0/bin/detox build --configuration ios.sim.release
-- /Users/travis/.nvm/versions/node/v10.6.0/bin/detox test --configuration ios.sim.release --cleanup
+- detox build --configuration ios.sim.release
+- detox test --configuration ios.sim.release --cleanup
