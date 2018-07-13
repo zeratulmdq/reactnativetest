@@ -7,6 +7,9 @@ describe('Example', () => {
     await expect(element(by.id('View'))).toBeVisible();
   });
 
+  it('should have welcome screen 2', async () => {
+    await expect(element(by.id('Test'))).toBeVisible();
+  });
   /*it('should show hello screen after tap', async () => {
     await element(by.id('hello_button')).tap();
     await expect(element(by.text('Hello!!!'))).toBeVisible();

@@ -21,7 +21,7 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container} testID='View'>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
+        <Text style={styles.welcome} testID='Test'>Welcome to React Native!</Text>
         <Text style={styles.instructions}>To get started, edit App.js</Text>
         <Text style={styles.instructions}>{instructions}</Text>
       </View>
