@@ -10,6 +10,7 @@ env:
   - NODE_VERSION=stable
 
 install:
+- xcrun simctl list
 - brew tap wix/brew
 - brew install applesimutils
 - curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
