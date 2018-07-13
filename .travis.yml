@@ -26,5 +26,5 @@ install:
 
 script:
 - pwd
-- /usr/local/bin/detox build --configuration ios.sim.release
-- /usr/local/bin/detox test --configuration ios.sim.release --cleanup
+- `which detox` build --configuration ios.sim.release
+- `which detox` test --configuration ios.sim.release --cleanup
