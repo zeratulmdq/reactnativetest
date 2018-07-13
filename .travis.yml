@@ -1,5 +1,5 @@
 language: objective-c
-osx_image: xcode8.3
+osx_image: xcode9.2
 
 branches:
   only:
@@ -10,19 +10,14 @@ env:
   - NODE_VERSION=stable
 
 install:
-- xcrun simctl list
 - brew tap wix/brew
 - brew install applesimutils
 - curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
 - export NVM_DIR="$HOME/.nvm" && [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 - nvm install $NODE_VERSION
 - nvm use $NODE_VERSION
-
 - npm install -g react-native-cli
 - npm install -g detox-cli
-- pwd
-- ls
-- which detox
 
 script:
 - npm install
